@@ -1,3 +1,4 @@
 Feature: Download Page
 
-  ssfdfdfddf
+  Scenario: verify that user is able to see download
+    Given dsdjsdsjkd
