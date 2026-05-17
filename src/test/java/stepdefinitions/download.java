@@ -1,22 +1,28 @@
 package stepdefinitions;
 
+import base.baseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.downloadPage;
 
 
-public class download {
-
-    @Given("user is on the website")
-    public void user_is_on_the_website(){
-
+public class download extends baseClass {
+    downloadPage downloadPage= new downloadPage(driver);
+    @Given("user is on the downloadlinkpage")
+    public void user_is_on_the_downloadlinkpage(){
+        downloadPage.downloadpage_link_click();
     }
-    @When("user is click on any file")
-    public void user_is_click_on_any_file(){
-
+    @When("user clicks on inputdata link")
+    public void user_clicks_on_inputdata_link(){
+     downloadPage.inputdataoption_click();
     }
-    @Then("file should gets downloaded")
-    public void file_should_gets_downloaded(){
-
+    @Then("that page should gets downloaded")
+    public void that_page_should_gets_downloaded(){
+        System.out.println("it downloaded");
+    }
+    @Then("input data link should be shown")
+    public void input_data_link_should_be_shown(){
+    downloadPage.inputdata_disaply();
     }
 }
