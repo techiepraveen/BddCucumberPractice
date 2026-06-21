@@ -7,10 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        features = "src/test/resources/Features/formAuthentication.feature",
+        features = "src/test/resources/Features",
 
         glue = {"stepdefinitions", "hooks"},
-
         plugin = {
                 "pretty",
                 "html:target/cucumber-reports.html"

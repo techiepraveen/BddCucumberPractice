@@ -15,7 +15,7 @@ public class downloadPage {
     @FindBy(xpath = "//a[@href='/download']")
     WebElement downloadpagelink;
 
-    @FindBy(xpath = "//a[text()='inputdata.json']")
+    @FindBy(xpath = "//a[text()='test_image.png']")
     WebElement inputdata;
 
     public void downloadpage_link_click(){
