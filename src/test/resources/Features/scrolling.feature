@@ -1,12 +1,8 @@
 Feature: Scrolling
 
-  Scenario: verify that user is able to scroll horizontal
-    Given user is on the website
-    When user clicks on horizontals scroll
-    Then horizontal scroll should work
-
+  Background:
+    Given user is on the infinite scroll
 
   Scenario: verify that user is able to scroll vertical
-    Given user is on the website
     When user clicks on vertical scroll
     Then vertical scroll should work
